@@ -64,7 +64,6 @@ library
     -Wall
     -fno-warn-missing-signatures
     -fno-warn-unused-do-bind
-    -funbox-strict-fields
     -rtsopts
     -- -threaded
     -optc-O3
