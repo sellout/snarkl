@@ -16,6 +16,9 @@ jobs:
       with:
         submodules: recursive
 
+    - name: fix git
+      run: git config --global url.https://github.com/.insteadOf git://github.com/
+
     - name: dependencies
       run: ./prepare-depends.sh
 
