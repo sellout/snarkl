@@ -9,8 +9,10 @@ DEPINST=/usr
 
 mkdir -p $DEPSRC
 
+git submodule init && git submodule update
+
 cd $DEPSRC
-[ ! -d libsnark ] && git clone git://github.com/jkroll/libsnark
+# [ ! -d libsnark ] && git clone git://github.com/jkroll/libsnark
 cd libsnark
 ./prepare-depends.sh
 make

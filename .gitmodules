@@ -1,0 +1,3 @@
+[submodule "depsrc/libsnark"]
+	path = depsrc/libsnark
+	url = https://github.com/jkroll/libsnark
