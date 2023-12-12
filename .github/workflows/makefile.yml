@@ -26,4 +26,4 @@ jobs:
       run: ./prepare-depends.sh
 
     - name: build snarky
-      run: cd snarky && make -j
+      run: cd cppsrc && make -j
