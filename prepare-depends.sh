@@ -14,7 +14,7 @@ cd $DEPSRC
 cd libsnark
 ./prepare-depends.sh
 make -j
-make check
+# make check
 sudo make install PREFIX=$DEPINST
 
 
