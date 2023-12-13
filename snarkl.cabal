@@ -91,7 +91,7 @@ library
   
   build-depends: 
     base                >=4.7,
-    containers 		>=0.5 && <0.6, 
+    containers 		>=0.5 && <0.7,
     mtl 		>=2.2 && <2.3,
     criterion 		>=1.0, 
     parallel 		>=3.2 && <3.3,
