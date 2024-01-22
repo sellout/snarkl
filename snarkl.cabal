@@ -1,6 +1,6 @@
 name:               snarkl
 
--- The package version.  See the Haskell package versioning policy (PVP) 
+-- The package version.  See the Haskell package versioning policy (PVP)
 -- for standards guiding when and how versions should be incremented.
 -- http://www.haskell.org/haskellwiki/Package_versioning_policy
 -- PVP summary:      +-+------- breaking API changes
@@ -25,7 +25,9 @@ source-repository head
 
 library
   ghc-options:
-    -Wall -Wredundant-constraints -Werror -funbox-strict-fields
+    -Wall -Wredundant-constraints -Werror
+    -fexpose-all-unfoldings -fno-omit-interface-pragmas
+    -fno-enable-rewrite-rules
     -optc-O3
 
   -- -threaded
