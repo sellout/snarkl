@@ -26,8 +26,8 @@
         flake = pkgs.hixProject.flake {};
       in flake // rec
            { legacyPackages = pkgs;
-              packages =  
-                { 
+              packages =
+                {
                   lib = flake.packages."snarkl:lib:snarkl";
                   print = flake.packages."snarkl:exe:print-examples";
                   all = pkgs.symlinkJoin {
@@ -58,5 +58,9 @@
       );
   nixConfig = {
     allow-import-from-derivation = true;
+    extra-substituters = ["https://martyall.cachix.org"];
+    extra-trusted-public-keys = [
+      "martyall.cachix.org-1:CrJFPxvYeNEFevcbWAD/Hj1NYu9mtGbLh6Bojvc9TBE="
+    ];
   };
 }
